@@ -11,6 +11,6 @@ app.post("/createblotter", blotter.createblotter)
 app.get("/getblotter", blotter.getblotter)
 app.post("/loginblotter", blotter.loginblotter)
 
-app.listen(3000,  () => {
+app.listen(3000, () => {
   console.log("Listening on Port:3000")
 })
