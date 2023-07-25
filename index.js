@@ -1,6 +1,6 @@
 const express = require("express")
 const blotter = require("./blotter")
-const port = process.env.PORT || 3000;
+
 const app = express()
 
 app.use(express.json())
@@ -11,6 +11,6 @@ app.post("/createblotter", blotter.createblotter)
 app.get("/getblotter", blotter.getblotter)
 app.post("/loginblotter", blotter.loginblotter)
 
-app.listen(port, () => {
-  console.log('Listening on Port ${port}');
+app.listen(3000,  () => {
+  console.log("Listening on Port:3000")
 })
